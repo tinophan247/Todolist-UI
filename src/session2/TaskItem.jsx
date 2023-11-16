@@ -1,13 +1,13 @@
 import React from "react";
 
-function TaskItem() {
+function TaskItem({item, handleDelete}) {
   return (
     <div className="taskItem">
       <div className="taskLeft">
         <input type="checkbox" />
-        <p>Read a book</p>
+        <p>{item.taskName}</p>
       </div>
-      <button>Delete</button>
+      <button onClick={handleDelete}>Delete</button>
     </div>
   );
 }
