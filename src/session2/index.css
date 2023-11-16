@@ -1,0 +1,69 @@
+.container {
+    height: 100vh;
+    background-image: url('https://vietnam.travel/sites/default/files/2022-06/shutterstock_585187837_0.jpg');
+    background-repeat:  no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todolist {
+    width: 400px;
+    height: auto;
+    min-height: 250px;
+    background-color: rgba(39, 41, 42, 0.6);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.todolist h1 {
+    color: white;
+    text-align: center;
+}
+
+.addList {
+    display: flex;
+    gap: 10px;
+}
+
+.addList input {
+    width: 100%;
+    height: 30px;
+}
+
+.addList button {
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+    height: 30px;
+}
+
+.taskList {
+    margin-top: 10px;
+}
+
+.taskItem {
+    background-color: rgba(0,0,139,0.6);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0px 15px;
+    justify-content: space-between;
+}
+.taskItem p {
+    color: white;
+}
+
+.taskLeft {
+    display: flex;
+    gap: 10px;
+}
+
+.taskItem button {
+    background-color: firebrick ;
+    color: white;
+    font-weight: 600;
+    height: 25px;
+}
+
