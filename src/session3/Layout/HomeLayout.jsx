@@ -1,11 +1,13 @@
 import React from 'react'
-import HeaderEducation from '../../session4/Headeer'
+import HeaderEdu from '../../session4/HeaderEdu'
+import Submit from '../../session4/Submit'
 
 function HomeLayout({children}) {
   return (
     <div>
-        <HeaderEducation/>
+        <HeaderEdu/>
         {children}
+        <Submit/>
     </div>
   )
 }

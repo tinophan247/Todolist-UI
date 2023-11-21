@@ -1,10 +1,11 @@
 import React from 'react'
 import HomeLayout from './Layout/HomeLayout'
 import Banner from '../session4/Banner'
-import CategoryEdu from '../session4/CategoryEdu'
+import Category from '../session4/Category'
 import Course from '../session4/Course'
 
 function HomePage() {
+
   const eduList = [
     {
       id : 1,
@@ -47,17 +48,17 @@ function HomePage() {
       name : 'Đánh giá năng lực ĐHQG-HN'
     },
   ]
+
   return (
     <HomeLayout>
         <Banner/>
-        <CategoryEdu/>
-        <div className='flex justify-center items-center bg-gray-50 '>
-          <div className='w-[1200px] max-w-[1200px] py-10 grid grid-cols-5 gap-y-5'>
-            {eduList.map((item,index) => (
-            <Course item={item} key={index}/>
-            ))}
-
-          </div>
+        <Category/>
+        <div className='flex justify-center items-center bg-slate-50 '>
+            <div className='w-[1200px] max-w-[1200px] grid grid-cols-5 '>
+              {eduList.map((item,index) =>(
+                <Course item={item} key={index}/>
+              ))}
+            </div>
         </div>
     </HomeLayout>
   )
