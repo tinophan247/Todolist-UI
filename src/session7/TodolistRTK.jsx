@@ -18,7 +18,7 @@ function TodolistRTK() {
           <h1 className="text-3xl font-bold">ToDo App</h1>
           <div className="mt-4 flex">
             <input
-              className="w-80 border-b-2 border-gray-500 text-black"
+              className="w-80 pl-2 border-b-2 border-gray-500 text-black focus:outline-none	 "
               type="text"
               value={task}
               onChange={(e) => setTask(e.target.value)}
