@@ -59,15 +59,7 @@ const bauCuaSlice = createSlice({
       betingListUpdate.forEach((item,index) => {
         let indexBeting = state.betingList.findIndex(x => x.id === item.id)
         if (index !== -1) {
-            state.totalScore += state.betingList[indexBeting].score
-        }
-      })
-
-      //Xử lý hoàn tiền
-      state.betingList.forEach((item,index) => {
-        let indexRandomDice = betingListUpdate.findIndex(x => x.id === item.id) 
-        if (indexRandomDice !== -1) {
-            state.totalScore += item.score
+            state.totalScore += (state.betingList[indexBeting].score * 2)
         }
       })
 
