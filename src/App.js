@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Login from "./session3/Login/Login";
 import Register from "./session3/Login/Register";
-import NotFoundPage from "./session3/404/NotFountPage";
+import NotFound from "./session3/404/NotFound";
 import HomePage from "./session3";
 import Contact from "./session3/Contact/Contact";
 import Table from "./session5/Table";
@@ -15,16 +15,16 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<HomePage/>} />
-      <Route path="/login" element={<Login/>} />
-      <Route path="/register" element={<Register/>} />
-      <Route path="*" element={<NotFoundPage/>}/>
-      <Route path="/contact" element={<Contact/>}/>
-      <Route path="/table" element={<Table/>}/>
-      <Route path="/keo-bua-bao" element={<KeoBuaBao/>}/>
-      <Route path="/todolist" element={<TodolistRTK/>}/>
-      <Route path="/taixiu" element={<Taixiu/>}/>
-      <Route path="/baucua" element={<BauCua/>}/>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="*" element={<NotFound />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/table" element={<Table />} />
+      <Route path="/keo-bua-bao" element={<KeoBuaBao />} />
+      <Route path="/todolist" element={<TodolistRTK />} />
+      <Route path="/taixiu" element={<Taixiu />} />
+      <Route path="/baucua" element={<BauCua />} />
     </Routes>
   );
 }
